@@ -6,6 +6,9 @@ import os
 import time
 
 USER = subprocess.Popen('whoami', shell=True, stdout=subprocess.PIPE).stdout.read().decode('utf8').replace('\n','')
+
+# IMPORTANT: This will probably not work! You need to change the PATH to your folder
+# where the elox kernel source tree is!
 PATH = f'/media/leonard/USB/elox_kernel'
 
 BANNER = """
