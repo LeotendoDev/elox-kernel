@@ -53,7 +53,7 @@ if len(sys.argv) != 2:
   sys.exit(1)
 
 if sys.argv[1] == 'build':
-  list = os.listdir(PATH)
+  list = os.listdir('../elox_kernel')
   for root, dirs, files in os.walk(PATH):
     for file in files:
       current_file = os.path.join(root, file)
