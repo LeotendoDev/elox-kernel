@@ -14,6 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: make build-x86_64
-    - name: qemu
-      run: qemu-system-x86_64 dist/x86_64/kernel.iso
+      run: python3 build.py build
