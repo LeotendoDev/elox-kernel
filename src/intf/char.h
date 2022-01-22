@@ -8,6 +8,9 @@
  * 
 */
 
+#ifndef ELOX_CHAR_SET
+#define ELOX_CHAR_SET
+
 #define ALPHABET_BASE 26
 
 static char *alphabet_table[ALPHABET_BASE*2] = {
@@ -23,5 +26,9 @@ static char *alphabet_table[ALPHABET_BASE*2] = {
     "V", "W", "X", "Y", "Z"
 };
 
-static char *to_upper_case(char* character);
-static char *to_lower_case(char* character);
+char *to_upper_case(char* character);
+char *to_lower_case(char* character);
+char *convert_hex_to_dec(char* character);
+char *convert_dec_to_hex(char* character);
+
+#endif

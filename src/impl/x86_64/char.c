@@ -11,9 +11,9 @@
 #include "char.h"
 #include <stdint.h>
 
-static char *to_upper_case(char* character) {
+char *to_upper_case(char* character) {
     uint8_t char_index;
-    for (int i = 0; i < 52; i++) {
+    for (int i = 0; i < (ALPHABET_BASE*2) - 1; i++) {
         if (alphabet_table[i] == character) {
             char_index = i;
         }
@@ -23,9 +23,9 @@ static char *to_upper_case(char* character) {
     return alphabet_table[char_index + ALPHABET_BASE];
 }
 
-static char *to_lower_case(char* character) {
+char *to_lower_case(char* character) {
     uint8_t char_index;
-    for (int i = 0; i < 52; i++) {
+    for (int i = 0; i < (ALPHABET_BASE*2) - 1; i++) {
         if (alphabet_table[i] == character) {
             char_index = i;
         }

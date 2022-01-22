@@ -10,9 +10,10 @@
 
 #include "print.h"
 #include "char.h"
+#include "boot.h"
+#include "time_scheduler.h"
 
 void kernel_main() {
     print_clear();
-    print_set_color(PRINT_COLOR_YELLOW, PRINT_COLOR_BLACK);
-    print_str(to_upper_case("w"));
+    print_boot_log("Booting from hard-drive... ");
 }
