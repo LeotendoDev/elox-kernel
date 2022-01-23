@@ -3,7 +3,7 @@
  * 
  * LICENSE: Gnu GPL v2
  * AUTHOR: <leotendosteinhoff@gmail.com>
- * FILE: 'char.c'
+ * FILE: 'screen.h'
  * WEBSITE: <https://ftp.elox-kernel.org>
  * 
 */

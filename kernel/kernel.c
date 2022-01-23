@@ -11,10 +11,15 @@
 #include "../header/print.h"
 #include "../header/char.h"
 #include "../header/boot.h"
+#include "../driver/keyboard/keyboard.h"
 
 void kernel_main() {
-    //print_clear();
-    print_boot_log("Booting from hard-drive...", DONE);
+    print_clear();
+    /*print_boot_log("Booting from hard-drive...", DONE);
     print_boot_log("Loading file system...", FAILED);
     print_boot_log("Loading keyboard layout...", DONE);
+*/
+    while (1) {
+        keyboard_handler();
+    }
 }

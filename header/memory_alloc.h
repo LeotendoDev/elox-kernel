@@ -13,9 +13,10 @@
 #ifndef ELOX_MEMORY_ALLOC_H
 #define ELOX_MEMORY_ALLOC_H
 
-#define MEMORY_CHUNK 1024
+#define HEAP_CAP         640000
+#define MEMORY_CHUNK_CAP 1024
 
-void alloc(uint64_t memory_size);
-void de_alloc(uint64_t *memory);
+void memory_alloc(size_t mem_size);
+void free_memory(size_t *memory);
 
 #endif /* memory_alloc.h */

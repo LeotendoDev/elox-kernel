@@ -39,6 +39,8 @@ typedef __UINT32_TYPE__ uint32_t;
 typedef __UINT64_TYPE__ uint64_t;
 #endif
 
+typedef unsigned long size_t;
+
 /* 7.8.1.2 Minimum-width integer types */
 
 typedef __INT_LEAST8_TYPE__ int_least8_t;
