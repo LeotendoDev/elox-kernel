@@ -8,8 +8,8 @@
  * 
 */
 
-#include "print.h"
-#include "boot.h"
+#include "../header/print.h"
+#include "../headerboot.h"
 
 void print_prefix() {
     print_str("[");
