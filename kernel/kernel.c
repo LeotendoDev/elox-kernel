@@ -9,8 +9,8 @@
 */
 
 #include "../header/print.h"
-#include "../headerchar.h"
-#include "../headerboot.h"
+#include "../header/char.h"
+#include "../header/boot.h"
 
 void kernel_main() {
     //print_clear();
