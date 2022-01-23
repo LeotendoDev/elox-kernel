@@ -58,7 +58,7 @@ if sys.argv[1] == 'build':
     for file in files:
       current_file = os.path.join(root, file)
       if current_file.endswith('.c') or current_file.endswith('.h') or current_file.endswith('.asm') or current_file.endswith('.s') or current_file.endswith('.py'):
-        print(f'[KERNEL] Compiling \'{os.path.join(root, current_file)}\'')
+        print(f'-> Compiling \'{os.path.join(root, current_file)}\'')
         #time.sleep(1)
 
   os.system('make build-x86_64')
