@@ -8,7 +8,7 @@
  * 
 */
 
-#include "char.h"
+#include "../header/char.h"
 #include <stdint.h>
 
 char *to_upper_case(char* character) {
